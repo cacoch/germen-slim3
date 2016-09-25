@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4467ab4cba33e2fc6c2d088c6512e2ba",
-    "content-hash": "193120e77f0ae2d93f56e64c07757b92",
+    "hash": "95cf81cc2cf85ce35b929fa4bb1541ea",
+    "content-hash": "55843b00a07fb9b39d36c53e1b77d068",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -33,6 +33,46 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "js-phpize/js-phpize",
+            "version": "0.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/js-phpize.git",
+                "reference": "de056c9ceb074f8dd52da3b5e881d9104b7e307d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/de056c9ceb074f8dd52da3b5e881d9104b7e307d",
+                "reference": "de056c9ceb074f8dd52da3b5e881d9104b7e307d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": ">=4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsPhpize": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Katarn",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Convert js-like syntax to standalone PHP code.",
+            "time": "2016-08-29 20:19:46"
         },
         {
             "name": "nikic/fast-route",
@@ -172,6 +212,83 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "pug-php/pug",
+            "version": "2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/pug.git",
+                "reference": "b90756408a760f01f8e309644908a2b67d427efd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/pug/zipball/b90756408a760f01f8e309644908a2b67d427efd",
+                "reference": "b90756408a760f01f8e309644908a2b67d427efd",
+                "shasum": ""
+            },
+            "require": {
+                "js-phpize/js-phpize": ">=0.1.0",
+                "php": ">=5.3.0"
+            },
+            "replace": {
+                "kylekatarnls/jade-php": "self.version"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": ">=4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pug\\": "src/",
+                    "Jade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryasho",
+                    "email": "konstantin.kudryashov@knplabs.com",
+                    "homepage": "http://about.me/everzet",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Janez Troha",
+                    "email": "janez.troha@gmail.com",
+                    "homepage": "http://flavors.me/dz0ny",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luke GB",
+                    "email": "git@lukegb.com",
+                    "homepage": "http://twitter.com/lukegb",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ronan Tessier",
+                    "email": "ronan.tessier@vaconsulting.lu",
+                    "homepage": "http://github.com/ronan-gloo",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "homepage": "http://github.com/kylekatarnls",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "HAML-like template engine for PHP 5.3",
+            "homepage": "https://github.com/pug-php/pug",
+            "keywords": [
+                "jade",
+                "minification",
+                "pug",
+                "template"
+            ],
+            "time": "2016-09-21 10:00:48"
         },
         {
             "name": "slim/slim",
