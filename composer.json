@@ -1,6 +1,21 @@
 {
-    "require": {
-        "slim/slim": "^3.5",
-        "pug-php/pug": "^2.4"
-    }
+	"name": "cacoch/germen-slim3",
+	"require": {
+		"slim/slim": "^3.5",
+		"pug-php/pug": "^2.4",
+		"twbs/bootstrap": "3.3.7"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php -r \"mkdir('./public/css', 0777, true);\"",
+			"php -r \"mkdir('./public/js', 0777, true);\"",
+			"php -r \"mkdir('./public/fonts', 0777, true);\"",
+			"php -r \"mkdir('./public/img', 0777, true);\"",
+			"php -r \"copy('./vendor/twbs/bootstrap/dist/css/bootstrap-theme.min.css', './public/css/bootstrap-theme.min.css');\"",
+			"php -r \"copy('./vendor/twbs/bootstrap/dist/css/bootstrap.min.css', './public/css/bootstrap.min.css');\"",
+			"php -r \"copy('./vendor/twbs/bootstrap/dist/js/bootstrap.min.js', './public/js/bootstrap.min.js');\"",
+			"php -r \"copy('./vendor/twbs/bootstrap/docs/assets/js/vendor/jquery.min.js', './public/js/jquery.min.js');\"",
+			"php -r \"copy('./vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', './public/fonts/glyphicons-halflings-regular.eot');\""
+		]
+	}
 }
